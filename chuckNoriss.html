@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chucknorris.css">
+</head>
+
+<body>
+    <nav class="nav-extended black">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Chuck Norris Random Jokes</a>
+        </div>
+    </nav>
+
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <button class="btn waves-effect waves-light black" id="getJokes" onclick="fetchJokes()">Get Jokes</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="m4 offset-m4 col s6 offset-s3 center">
+                    <input class="numberOfJokess" type="number" id="numberOfJokes" placeholder="Enter number of jokes">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12 center">
+                    <div id="jokes"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l12  m12 s12 center social">
+                    <a class="grey-text text-lighten-3" href="https://github.com/SollyVista" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="grey-text text-lighten-3" href="https://linedin.com/solomon-baloyi-86b440110" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="center">credit:Gopinath</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="chuckNorriss.js"></script>
+
+</html>
